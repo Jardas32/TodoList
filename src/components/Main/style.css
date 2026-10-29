@@ -1,0 +1,114 @@
+.wrapper-list {
+  width: 100%;
+  max-width: 730px;
+  height: 250px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.wrapper-list::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(255, 255, 255, 0.125);
+  border-radius: 10px;
+}
+
+.wrapper-list::-webkit-scrollbar-thumb {
+  cursor: grab;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.todo {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.243);
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.todo.active {
+  opacity: 0.6;
+}
+
+.todo::marker {
+  color: #fff;
+}
+
+.li-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-checked {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wrapper-checked input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.title.active {
+  text-decoration: 2px line-through gray;
+}
+
+.wrapper-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrapper-button button {
+  background-color: transparent;
+  border: none;
+}
+
+.icon-delete {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: red;
+  font-size: 18px;
+}
+
+.icon-delete:hover {
+  transform: scale(1.2);
+}
+
+.icon-edit {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: gold;
+  font-size: 18px;
+}
+
+.icon-edit:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .todo-list {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .todo {
+    padding: 8px 12px;
+  }
+}

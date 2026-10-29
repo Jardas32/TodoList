@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper-app {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(156, 62, 255),
+    rgb(66, 66, 255),
+    rgb(156, 62, 255)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .wrapper-app {
+    padding: 5px;
+  }
+}
