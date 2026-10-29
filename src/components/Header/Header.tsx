@@ -8,6 +8,7 @@ function Header() {
   const addTasks = useTodoStore((state) => state.addTasks);
   const userName = useStoreUser((state) => state.userName);
   const deleteUser = useStoreUser((state) => state.deleteUser);
+  const clearTodos = useTodoStore((state) => state.clearTodos);
 
   return (
     <header className="header">
@@ -29,7 +30,13 @@ function Header() {
       </div>
 
       <div className="wrapper-user-delete">
-        <button onClick={() => deleteUser()} className="btn-delete-user">
+        <button
+          onClick={() => {
+            deleteUser();
+            clearTodos();
+          }}
+          className="btn-delete-user"
+        >
           Delete user
         </button>
       </div>

@@ -17,6 +17,7 @@ interface TodosState {
   completedChange: (id: string) => void;
   editTasks: (id: string, title: string) => void;
   cancel: () => void;
+  clearTodos: () => void;
 }
 
 export const useTodoStore = create<TodosState>()(
@@ -81,6 +82,11 @@ export const useTodoStore = create<TodosState>()(
       cancel: () =>
         set(() => ({
           selectId: "",
+        })),
+
+      clearTodos: () =>
+        set(() => ({
+          todos: [],
         })),
     }),
     {
