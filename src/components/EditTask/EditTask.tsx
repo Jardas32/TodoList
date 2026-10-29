@@ -16,7 +16,7 @@ function EditTask() {
         value={editTitle}
         onChange={handleEditTitleChange}
         type="text"
-        placeholder="Edit task..."
+        placeholder="New task..."
       />
 
       <div className="wrapper-button-edit">
