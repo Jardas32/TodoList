@@ -10,6 +10,8 @@ function User() {
   return (
     <div className="wrapper-user">
       <div className="user-card">
+        <h2 className="todo-title">My Todo List</h2>
+
         <div className="wrapper-logo">
           <img src={TodoLogo} alt="logo" />
         </div>

@@ -54,15 +54,21 @@
   cursor: pointer;
   background-color: blueviolet;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   padding: 6px 8px;
-  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .btn-add:hover {
   background-color: rgba(137, 43, 226, 0.843);
+}
+
+.icon-add {
+  font-size: 16px;
 }
 
 .btn-delete-user {

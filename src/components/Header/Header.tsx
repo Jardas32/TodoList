@@ -1,6 +1,7 @@
 import "./style.css";
 import { useTodoStore } from "../../store/StoreTodo";
 import { useStoreUser } from "../../store/StoreUser";
+import { IoMdAdd } from "react-icons/io";
 
 function Header() {
   const title = useTodoStore((state) => state.title);
@@ -25,7 +26,7 @@ function Header() {
           placeholder="Enter task . . ."
         />
         <button onClick={() => addTasks(title)} className="btn-add">
-          Add
+          <IoMdAdd  className="icon-add" />
         </button>
       </div>
 

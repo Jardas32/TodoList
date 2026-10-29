@@ -20,6 +20,12 @@
   box-shadow: 0 0 44px rgba(0, 0, 0, 0.385);
 }
 
+.todo-title {
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .wrapper-logo {
   max-width: 200px;
   width: 100%;
