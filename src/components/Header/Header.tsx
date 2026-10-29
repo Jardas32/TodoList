@@ -23,10 +23,10 @@ function Header() {
           value={title}
           onChange={handleTitleChange}
           type="text"
-          placeholder="Enter task . . ."
+          placeholder="Enter your task . . ."
         />
         <button onClick={() => addTasks(title)} className="btn-add">
-          <IoMdAdd  className="icon-add" />
+          <IoMdAdd className="icon-add" />
         </button>
       </div>
 
