@@ -84,3 +84,9 @@
 .btn-user-add:hover {
   background-color: rgb(27, 177, 27);
 }
+
+@media (max-width: 430px) {
+  .wrapper-user {
+    padding: 10px;
+  }
+}

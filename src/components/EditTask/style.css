@@ -9,7 +9,7 @@
   width: 100%;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: none;
@@ -18,7 +18,7 @@
 
 .wrapper-edit-task input::placeholder {
   color: rgb(255, 255, 255);
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -59,4 +59,11 @@
 
 .btn-cancel:hover {
   background-color: rgb(216, 2, 16);
+}
+
+@media (max-width: 600px) {
+  .wrapper-edit-task input,
+  .wrapper-edit-task input::placeholder {
+    font-size: 16px;
+  }
 }
